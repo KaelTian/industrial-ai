@@ -165,8 +165,7 @@ git commit -m "Add new feature"
 git push origin feature/new-function
 
 
-
-    提交 Pull Request 并描述变更内容。
+提交 Pull Request 并描述变更内容。
 
 许可证
 
