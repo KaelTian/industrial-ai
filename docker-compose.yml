@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  industrial-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile  # 明确指定 Dockerfile 的路径，如果使用默认的 Dockerfile 可省略
+    image: industrial-ai
+    container_name: industrial-ai-container
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/app
+    restart: always
+    working_dir: /app  # 指定容器内的工作目录
+    environment:
+      - ENV_VAR_NAME=value  # 根据实际需求添加环境变量
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8050"]  # 根据实际服务的健康检查方式修改
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s

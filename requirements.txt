@@ -1,0 +1,12 @@
+# 基础依赖
+pandas
+numpy
+schedule
+
+# 数据可视化
+dash
+plotly
+
+# AI 模型训练与预测
+scikit-learn
+joblib

@@ -1,0 +1,15 @@
+# 虚拟环境
+industrial-ai-env/
+venv/
+.env/
+.Python/
+pipenv/
+pipenv-*.txt
+
+# 其他
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
